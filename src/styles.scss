@@ -1,1 +1,308 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+// color variables
+$clr-theme: #11A8C0;
+$clr-secondary: #E30967;
+$clr-secondary-light: #FDE4ED;
+$clr-black: #000000;
+$clr-white: #ffffff;
+$clr-grey: #BCBCBC;
+$clr-green: #1CCA7E;
+$clr-light-grey: #E6E6E6;
+$clr-bg-white: #F2F3F9;
+$clr-yellow: #E0D42A;
+$clr-light-yellow: #FEFBE6;
+$clr-light-green: #E4F8ED;
+$clr-dark-grey: #b1abab;
+$clr-yellow-green: #CAB21C;
+$clr-light-orange: #FFAD32;
+$clr-light-red: #FFEAED;
+$clr-red: #CA1C1C;
+
+/* font weight */
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-black: 900;
+
+// font family
+$primary-font: 'Poppins', sans-serif;
+
+
+body {
+    background: #f3f3f9;
+    font-family: $primary-font;
+    font-size: 14px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+.f-4 {
+    font-size: 4px;
+}
+
+.f-7 {
+    font-size: 7px;
+}
+
+.f-11 {
+    font-size: 11px;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-13 {
+    font-size: 13px;
+}
+
+.f-14 {
+    font-size: 14px !important;
+}
+
+.f-15 {
+    font-size: 15px;
+}
+
+.f-16 {
+    font-size: 16px !important;
+}
+
+.f-17 {
+    font-size: 17px !important;
+}
+
+.f-18 {
+    font-size: 18px !important;
+}
+
+.f-20 {
+    font-size: 20px !important;
+}
+
+.f-22 {
+    font-size: 20px !important;
+}
+
+.f-24 {
+    font-size: 24px !important;
+}
+
+.f-25 {
+    font-size: 25px !important;
+}
+
+.f-26 {
+    font-size: 26px;
+}
+
+.f-28 {
+    font-size: 28px;
+}
+
+.f-30 {
+    font-size: 30px;
+}
+
+.f-32 {
+    font-size: 32px;
+}
+
+.f-38 {
+    font-size: 38px;
+}
+
+.f-40 {
+    font-size: 40px;
+}
+
+.fw-regular {
+    font-weight: $font-regular;
+}
+
+.fw-medium {
+    font-weight: $font-medium;
+}
+
+.fw-semibold {
+    font-weight: $font-semibold;
+}
+
+.text-blk {
+    color: $clr-black !important;
+}
+
+.text-grey {
+    color: $clr-grey;
+}
+
+.text-white {
+    color: $clr-white;
+}
+
+.text-blue {
+    color: $clr-theme;
+}
+
+.text-yellow {
+    color: $clr-yellow;
+}
+
+.text-green {
+    color: $clr-green;
+}
+
+.text-red {
+    color: $clr-red;
+}
+
+.text-pink {
+    color: $clr-secondary;
+}
+
+.text-yellow-green {
+    color: $clr-yellow-green;
+}
+
+.bg-light-white {
+    background-color: $clr-bg-white !important;
+}
+
+.bg-light-white-hover:hover {
+    background-color: $clr-bg-white !important;
+}
+
+.bg-blue {
+    background-color: $clr-theme;
+}
+
+.bg-white {
+    background-color: $clr-white;
+}
+
+.bg-light-yellow {
+    background-color: $clr-light-yellow;
+}
+
+.bg-light-orange {
+    background-color: $clr-light-orange;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-light-green {
+    background-color: $clr-light-green;
+}
+
+.bg-light-red {
+    background-color: $clr-light-red;
+}
+
+.bg-light-pink {
+    background-color: $clr-secondary-light;
+}
+
+.bg-pink {
+    background-color: $clr-secondary;
+}
+
+.bg-light-grey {
+    background-color: $clr-light-grey;
+}
+
+.border-blk-1px {
+    border: 1px solid $clr-black;
+}
+
+.border-blue {
+    border: 1px solid $clr-theme;
+}
+
+.border-grey {
+    border: 1px solid $clr-light-grey;
+}
+
+.border-dark-grey {
+    border: 1px solid $clr-dark-grey;
+}
+
+.bg-dark-green {
+    background-color: $clr-green;
+}
+
+.bg-dark-red {
+    background-color: $clr-red;
+}
+
+.bg-dark-warning {
+    background-color: $clr-yellow-green;
+}
+
+.border-bottom-1-grey {
+    border-bottom: 1px solid $clr-light-grey !important;
+}
+
+.border-top-1-grey {
+    border-top: 1px solid $clr-light-grey !important;
+}
+
+.border-bottom-2-grey {
+    border-bottom: 2px solid $clr-light-grey !important;
+}
+
+.border-radius-8 {
+    border-radius: 8px;
+}
+
+.border-radius-6 {
+    border-radius: 6px;
+}
+
+.border-radius-4 {
+    border-radius: 4px;
+}
+
+.border-radius-2 {
+    border-radius: 2px;
+}
+
+.bx-shadow {
+    box-shadow: 0px 18px 30px #00000014;
+}
+
+.bx-shadow-0 {
+    box-shadow: none;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.mw-400 {
+    max-width: 400px;
+}
+
+.mw-500 {
+    max-width: 500px !important;
+}
+
+.mw-600 {
+    max-width: 600px !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: $clr-red !important;
+}
+
+.error_msg{
+    color: $clr-red;
+}

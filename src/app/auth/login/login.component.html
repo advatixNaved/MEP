@@ -1,0 +1,45 @@
+<div class="row center-elements">
+    <div class="col-md-12 d-flex align-items-center justify-content-center">
+        <div class="card">
+            <div class="d-flex justify-content-center">
+                <h1 class="mep">Login with MEP</h1>
+            </div>
+            <form [formGroup]="formGroup">
+                <div class="row my-5">
+                    <div class="col-md-12 mb-2">
+                        <div class="form-group">
+                            <label class="mendatory">Username</label>
+                            <input type="text" placeholder="Enter Username" formControlName="username"
+                                class="form-control" />
+                            <p class="error_msg"
+                                *ngIf="formGroup?.get('username')?.hasError('required') && formGroup.get('username')?.touched">
+                                Username is required.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                            <label class="mendatory">Password</label>
+                            <input [type]="passwordToggler ? 'password' : 'text'" placeholder="Enter Password"
+                                formControlName="password" class="form-control" />
+                            <div class="eye-container">
+                                <i class="align-bottom text-muted eye-icon f-16 cursor"
+                                    [ngClass]="passwordToggler ? 'ri-eye-fill' : 'ri-eye-off-fill'"
+                                    (click)="passwordToggler = !passwordToggler"></i>
+                            </div>
+                            <p class="error_msg"
+                                *ngIf="formGroup?.get('password')?.hasError('required') && formGroup.get('password')?.touched">
+                                Password is required.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary" (click)="onSubmit()">
+                            Login
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

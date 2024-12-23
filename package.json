@@ -5,6 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "mep-dev": "ng build --configuration=development",
+    "mep-qa": "ng build --configuration=qa",
+    "mep-uat": "ng build --configuration=uat",
+    "mep-prod": "ng build --configuration=production",
+    "mep-demo": "ng build --configuration=demo",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -18,6 +23,11 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "@primeng/themes": "^18.0.2",
+    "backoff-rxjs": "^7.0.0",
+    "ngx-spinner": "^17.0.0",
+    "primeicons": "^7.0.0",
+    "primeng": "^18.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
