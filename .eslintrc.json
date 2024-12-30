@@ -1,0 +1,21 @@
+{
+    "extends": [
+      "eslint:recommended",
+      "plugin:@angular-eslint/recommended",
+      "plugin:@angular-eslint/template/process-inline-templates"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": ["tsconfig.json"]
+    },
+    "plugins": ["@angular-eslint"],
+    "env": {
+      "browser": true,
+      "es2020": true
+    },
+    "rules": {
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"]
+    }
+  }
+  
